@@ -19,6 +19,7 @@
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.2.7",
+    "node-gyp": "^7.1.0",
     "sqlite3": "^5.0.0",
     "ytdl-core": "^3.2.1",
     "ytsr": "^0.1.21"
