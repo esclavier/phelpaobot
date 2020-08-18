@@ -10,8 +10,8 @@ async function invc (nomeinvc,msg) {
            let mensagem 
            dados.forEach(blocos=>{
               if(blocos.queueType==="RANKED_SOLO_5x5"){
-                mensagem="Solo Duo: "+  blocos.tier+" "+blocos.rank+" PDL: "+blocos.leaguePoints+" Vitórias: "+blocos.wins+
-               " Derrotas: "+ blocos.losses
+                mensagem="Solo Duo: "+  blocos.tier+" "+blocos.rank+"\n PDL: "+blocos.leaguePoints+"\n Vitórias: "+blocos.wins+
+               "\n Derrotas: "+ blocos.losses
                 msg.channel.send(mensagem)
               }
            })
