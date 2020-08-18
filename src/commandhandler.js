@@ -16,7 +16,6 @@ function caminho (msg,queue)
             mensagem.shift()
             mensagem.forEach(palavra =>nome=nome+ palavra +" ") 
         leaguebot(nome,msg)
-        console.log(leaguebot)
         break
         case "!flip" :
             flip (msg)
