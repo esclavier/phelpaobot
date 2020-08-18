@@ -8,7 +8,6 @@ const { BOT_TOKEN } = process.env;
 
 
 const axios = require("axios")
-const id = require("./id.json")
 const discord = require("discord.js")
 const client = new discord.Client ()
 const commandhandler = require("./src/commandhandler")
