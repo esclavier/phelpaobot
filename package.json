@@ -19,6 +19,7 @@
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.2.7",
+    "node-pre-gyp": "^0.15.0",
     "ytdl-core": "^3.2.1",
     "ytsr": "^0.1.21"
   }
