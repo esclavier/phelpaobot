@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Phelpinho/phelpaobot.git"
   },
   "author": "",
   "license": "ISC",
