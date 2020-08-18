@@ -1,9 +1,4 @@
 //Discord
-const dotenv = require("dotenv")
-if(process.env.NODE_ENV !== 'production')
-    dotenv.config();
-const { BOT_TOKEN } = process.env;
-
 const axios = require("axios")
 const id = require("./id.json")
 const discord = require("discord.js")
@@ -18,4 +13,4 @@ commandhandler(mensagem,queue)
 } 
  )
 
-client.login (BOT_TOKEN);
+client.login ("NzQ0NjI1NzEwOTQwOTQ2NTM0.Xzl8uw.kklzex7pW0WN12F3-coCDz3Wbuk")
