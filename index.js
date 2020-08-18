@@ -5,8 +5,6 @@ if(process.env.NODE_ENV !== 'production')
 
 const { BOT_TOKEN } = process.env;
 
-
-
 const axios = require("axios")
 const id = require("./id.json")
 const discord = require("discord.js")
