@@ -6,12 +6,8 @@
   "engines": {
         "node": "14.8.0"
       },
-  "devDependencies": {
-    "aws-sdk": "2.x"
-  },
   "scripts": {
-    "start": "node index.js",
-    "install": "node-pre-gyp install --fallback-to-build"
+    "start": "node ."
   },
   "author": "",
   "license": "ISC",
@@ -25,8 +21,5 @@
     "node-pre-gyp": "^0.15.0",
     "ytdl-core": "^3.2.1",
     "ytsr": "^0.1.21"
-  },
-  "binary": {
-    "module_name": "your_module",
-    "module_path": "./lib/binding/"}
+  }
 }
