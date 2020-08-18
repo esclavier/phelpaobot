@@ -6,7 +6,6 @@
     "node": "12.x"
   },
   "main": "index.js",
-  
   "scripts": {
     "start": "node index.js"
   },
@@ -19,6 +18,7 @@
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4",
     "ffmpeg-static": "^4.2.7",
+    "sqlite3": "^5.0.0",
     "ytdl-core": "^3.2.1",
     "ytsr": "^0.1.21"
   }
