@@ -5,6 +5,7 @@ const play = require("./play")
 const stop = require("./stop")
 const skip = require("./skip")
 const comandos = require("./comandos")
+const sefoder = require("./sefoder")
 
 function caminho (msg,queue)
 {
@@ -33,6 +34,9 @@ function caminho (msg,queue)
         case "!comandos" :
             comandos(msg)
             break
+        case "!sefoder" :
+            sefoder(msg)
+            break   
      }
 }
 
