@@ -6,10 +6,6 @@
   "scripts": {
     "start": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Phelpinho/phelpaobot.git"
-  },
   "author": "",
   "license": "ISC",
   "dependencies": {
