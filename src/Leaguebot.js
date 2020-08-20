@@ -12,10 +12,10 @@ async function invc (nomeinvc,msg) {
            dados.forEach(blocos=>{
               if(blocos.queueType==="RANKED_SOLO_5x5"){
                 let imagem = new discord.MessageAttachment(`./ranked-emblems/Emblem_${blocos.tier}.png`,"rank.png")
-                mensagem.setColor("#64FF00").setTitle(nomeinvc).setDescription("Status: ").addField("Solo Duo: ",blocos.tier+" "+blocos.rank)
+                mensagem.setColor("#64FF00").setTitle(nomeinvc).setDescription("Status : ").addField("Solo Duo : ",blocos.tier+" "+blocos.rank)
                 .addField("PDL : ",blocos.leaguePoints,true)
-                .addField("Vitórias: ",blocos.wins,true)
-                .addField("Derrotas: ",blocos.losses,true)
+                .addField("Vitórias : ",blocos.wins,true)
+                .addField("Derrotas : ",blocos.losses,true)
                 .setThumbnail(`http://ddragon.leagueoflegends.com/cdn/10.16.1/img/profileicon/${res.data.profileIconId}.png`)
                 .attachFiles(imagem)
                 .setImage("attachment://rank.png")
