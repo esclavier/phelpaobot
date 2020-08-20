@@ -22,8 +22,8 @@ function caminho (msg,queue)
             break
         case "!play" :
            let arg = msg.content.split(" ")
-           if (!arg) return msg.channel.send("Você não usou o comando de forma correta.")
            arg.shift()
+           if (!arg) return msg.channel.send("Você não usou o comando de forma correta.")
             play (msg,queue,arg)
             break
         case "!stop" :
