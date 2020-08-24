@@ -2,10 +2,10 @@ const axios = require("axios")
 const discord = require("discord.js")
 
 async function invc (nomeinvc,msg) {
-    await axios.get (`https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${nomeinvc}?api_key=RGAPI-0dccc2c8-e75c-4927-aaa4-7d1b489da747`)
+    await axios.get (`https://br1.api.riotgames.com/lol/summoner/v4/summoners/by-name/${nomeinvc}?api_key=RGAPI-9391dc31-d2d4-435e-88ff-439aa46c03eb`)
     .then( async res=>{
         let summonerid= res.data.id
-        await axios.get (`https://br1.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerid}?api_key=RGAPI-0dccc2c8-e75c-4927-aaa4-7d1b489da747`)
+        await axios.get (`https://br1.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerid}?api_key=RGAPI-9391dc31-d2d4-435e-88ff-439aa46c03eb`)
         .then(res2=>{
            let dados = res2.data
            const mensagem = new discord.MessageEmbed()
