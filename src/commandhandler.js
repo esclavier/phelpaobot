@@ -6,6 +6,7 @@ const stop = require("./stop")
 const skip = require("./skip")
 const comandos = require("./comandos")
 const sefoder = require("./sefoder")
+const registro = require("./registro")
 
 function caminho (msg,queue)
 {
@@ -39,6 +40,9 @@ function caminho (msg,queue)
         case "!sefoder" :
             sefoder(msg)
             break   
+        case "!registro" :
+            registro(msg)
+            break
      }
 }
 

@@ -3,7 +3,8 @@ const ytdl = require("ytdl-core")
 const ytsr = require("ytsr")
 
 module.exports= async (msg,queue,args)=>{
-    
+//pegamos do parametro msg, fila e música, o nome da música de um determinado server   
+//se não tiver música bot sai da sala e vai pra de baixo q é tocar e passar de música
     function play(guild,music){
         const serverqueue = queue.get(msg.guild.id)
         if (!music){
@@ -20,13 +21,16 @@ module.exports= async (msg,queue,args)=>{
         dispatcher.setVolumeLogarithmic(serverqueue.volume/5)
         serverqueue.textChannel.send(`Tocando **${music.title}**`)
     }
+    //Erro de não estar em canal de voz
     const voiceChannel = msg.member.voice.channel
     if (!voiceChannel)
     return msg.channel.send("Você precisa estar em um Canal de Voz para usar esse comando.")
+    //ME FODI PRA ENTENDER, REVISA
     let songname = " "
     for(let m of args){
         songname+=m+" "
     }
+    //
     const serverqueue = queue.get(msg.guild.id)
     const musica = await ytsr (songname,{limit: 1})
     const music = {
