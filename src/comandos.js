@@ -8,8 +8,7 @@ module.exports=(msg)=>{
     .addField("!conta","Sua conta no Lol")
     .addField("!flip", "cara ou coroa + pontos que quer apostar.")
     .addField("!sefoder", "Manda o Becha se foder")
-    .addField("!gratis", "Pega à cada 1 Hora, 100 pontos.")
+    .addField("!coins", "Pega à cada 1 Hora, 100 pontos.")
     .addField("!pontos", "Pontos que você tem.")
     msg.channel.send(mensagem)
 }
-//salve salve yodinha

@@ -44,7 +44,7 @@ function caminho (msg,queue)
         case "!pontos" :
             pontos(msg)
             break
-        case "!gratis" :
+        case "!coins" :
             gratis(msg)
             break
      }
