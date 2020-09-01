@@ -12,3 +12,4 @@ module.exports=(msg)=>{
     .addField("!pontos", "Pontos que você tem.")
     msg.channel.send(mensagem)
 }
+//salve salve yodinha
