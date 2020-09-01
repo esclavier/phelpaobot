@@ -6,7 +6,7 @@ module.exports=(msg)=>{
     .addField("!stop", "Encerra Música")
     .addField("!skip", "Passa de Música")
     .addField("!conta","Sua conta no Lol")
-    .addField("!flip", "cara ou coroa + pontos que quer apostar.")
+    .addField("!flip", "cara ou coroa e pontos que quer apostar.")
     .addField("!sefoder", "Manda o Becha se foder")
     .addField("!coins", "Pega à cada 1 Hora, 100 pontos.")
     .addField("!pontos", "Pontos que você tem.")
